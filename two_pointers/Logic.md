@@ -14,6 +14,7 @@ function twoPointersAlgorithm(array):
         else:
             right ← right - 1
 ```
+---
 
 ### Example: Two Sum II (Sorted Array)
 
