@@ -19,8 +19,6 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 """
 
-from typing import List
-
 def max_area(height: List[int]) -> int:
     left, right = 0, len(height) - 1
     max_water = 0
