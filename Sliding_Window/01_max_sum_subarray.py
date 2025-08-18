@@ -17,8 +17,6 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 """
 
-from typing import List
-
 def findMaxAverage(nums: List[int], k: int) -> float:
     # Initial window sum
     window_sum = sum(nums[:k])
