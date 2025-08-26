@@ -16,92 +16,69 @@ This repository **excludes classical DSA topics** (arrays, linked lists, stacks,
 ---
 ---
 
-## 1️⃣ Problem-Solving Patterns
+# 🧠 LeetCode Algorithms & Data Structures Cheat Sheet
 
-- **Two Pointers** (fast/slow pointer, opposite ends)
-- **Sliding Window** (fixed, variable, maximum, median)
+A comprehensive checklist of patterns, data structures, and algorithms to tackle (almost) any LeetCode problem.
+
+---
+
+## 🟢 Core Patterns *(Must Know)*
+- **Two Pointers** (Fast/Slow, Opposite Ends)
+- **Sliding Window** (Fixed & Variable Length)
 - **Prefix Sum / Difference Array**
-- **Bit Manipulation** (XOR tricks, bitmasking)
-- **Hashing** (HashMap, HashSet)
-- **Cycle Sort / Index Placement**
-- **Dutch National Flag Algorithm** (3-way partition)
-- **Monotonic Stack / Queue**
-- **Kadane’s Algorithm** (Max Subarray)
+- **Hashing** (HashMap, HashSet, Frequency Counting)
+- **Greedy Algorithms**
+- **Binary Search** (Standard & on Answer)
+- **Bit Manipulation** (XOR, Bitmasking)
+- **Intervals & Sweep Line**
+- **Backtracking** (Subsets, Permutations, N-Queens)
+- **Kadane’s Algorithm** (Max Subarray Sum)
 
----
+## 🟡 Core Data Structures
+- **Arrays & Strings**
+- **Linked Lists** (Reversal, Cycle Detection)
+- **Stacks & Queues** (Including Deque)
+- **Heaps (Priority Queues)** (Min-Heap, Max-Heap)
+- **Trees** (BST, Traversals, Recursive Problems)
+- **Graphs** (Representations, Basic BFS/DFS)
+- **Trie (Prefix Tree)**
+- **Union-Find (Disjoint Set Union - DSU)**
 
-## 2️⃣ Graph Algorithms
-
-- Graph Representations (Adjacency List, Matrix)
-- **DFS** (Recursive, Iterative, Grid DFS, Multi-source DFS)
-- **BFS** (Level Order, Grid BFS, Multi-source BFS)
-- **Union-Find** (Disjoint Set Union)
-- **Topological Sort** (Kahn’s Algorithm, DFS)
-- **Dijkstra’s Algorithm**
-- **Bellman–Ford Algorithm**
-- **Floyd–Warshall Algorithm**
-- **0-1 BFS**
-- **Tarjan’s Algorithm** (SCC, Bridges)
-- **Kosaraju’s Algorithm** (SCC in Graphs)
-- **Kruskal’s Algorithm** (MST)
-- **Prim’s Algorithm** (MST)
-
----
-
-## 3️⃣ Dynamic Programming (DP)
-
-- **1D DP** (Climbing Stairs, House Robber, Fibonacci variations)
-- **2D DP** (Grid paths, LCS variants, Minimum path sum)
-- **DP on Subsets** (Knapsack, Partition)
-- **DP on Strings** (Edit Distance, Regex, Wildcard matching)
+## 🔵 Dynamic Programming (DP)
+- **1D DP** (Fibonacci, Climbing Stairs, House Robber)
+- **2D DP** (Grid Unique Paths, LCS, Edit Distance)
+- **DP on Strings** (Palindrome, Regex Matching)
 - **DP on Trees**
-- **Bitmask DP** (State Compression)
-- **Longest Increasing Subsequence (LIS)**
-- **Knapsack Variants** (0/1, Unbounded)
+- **DP on Subsets / Bitmasking** (TSP, Partition)
+- **Knapsack** (0/1, Unbounded, Subset Sum)
+- **State Machine DP**
 
----
+## 🔴 Graph Algorithms *(Intermediate/Advanced)*
+- **Advanced BFS** (Multi-source, 0-1 BFS)
+- **Cycle Detection** (Directed & Undirected)
+- **Topological Sort** (Kahn's, DFS)
+- **Shortest Path** (Dijkstra, Bellman-Ford, Floyd-Warshall)
+- **Minimum Spanning Tree** (Prim's, Kruskal's)
+- **Strongly Connected Components (SCC)** (Kosaraju's, Tarjan's)
+- **Articulation Points & Bridges** (Tarjan's)
 
-## 4️⃣ Recursion, Backtracking & Search
-
-- **Recursion & Backtracking** (Permutations, Combinations, Subsets, N-Queens, Sudoku)
-- **Meet-in-the-Middle**
-
----
-
-## 5️⃣ String Algorithms
-
-- **Trie** (Prefix Tree)
-- **KMP Algorithm** (Knuth–Morris–Pratt)
-- **Rabin–Karp Algorithm**
-- **Z Algorithm**
-- **Manacher’s Algorithm** (Longest Palindromic Substring)
-- **Suffix Array** (rare but appears in some hard problems)
-- **Suffix Automaton** (very rare but appears in some hards)
-
----
-
-## 6️⃣ Advanced Data Structures
-
+## 🟣 Advanced Data Structures *(For Hard Problems)*
 - **Segment Tree**
-- **Fenwick Tree** (Binary Indexed Tree)
-- **Binary Lifting** (LCA)
-- **Euler Tour Technique**
+- **Fenwick Tree (BIT)**
+- **Monotonic Stack / Queue**
+- **LRU Cache** (Combines DLL + Hashing)
+- **Binary Lifting / LCA**
+- **Suffix Array & Suffix Automaton** (Very Rare)
+
+## ⚫️ Other Important Topics
+- **Math & Number Theory** (GCD/LCM, Sieve of Eratosthenes, Modular Exponentiation)
+- **Geometry** (Convex Hull, Line Sweep, Distance Formulas)
+- **Randomized Algorithms** (Reservoir Sampling, Randomized QuickSelect)
+- **Design Questions** (OOP Principles, Data Structure Design)
 
 ---
 
-## 7️⃣ Math & Geometry in LeetCode
-
-- **Convex Hull** (appears in LeetCode geometry problems)
-- **Line Sweep** (e.g., meeting rooms, intervals)
-- **Number Theory** (GCD, Modular Exponentiation)
-
----
-
-## 8️⃣ Randomized & Sampling Algorithms
-
-- **Reservoir Sampling**
-- **Randomized QuickSelect**
-
+> **Pro Tip from Tejas Tp:** Mastery comes from recognizing *which* pattern to apply and how to *combine* them not by just knowing these algorithms
 ---
 
 ## 📜 License
