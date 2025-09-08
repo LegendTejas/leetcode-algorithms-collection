@@ -14,21 +14,15 @@ Time: O(n)
 Space: O(1)
 """
 
-def majorityElement(nums):
-    # Phase 1: Find candidate
-    count = 0
-    candidate = None
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        candidate = None
+        count = 0
 
-    for num in nums:
-        if count == 0:
-            candidate = num
-        count += (1 if num == candidate else -1)
+        for num in nums:
+            if count == 0:
+                candidate = num
+        
+            count += 1 if candidate == num else -1
 
-    # Phase 2: Verify (optional for LeetCode 169, since majority always exists)
-    if nums.count(candidate) > len(nums) // 2:
         return candidate
-    return -1
-
-# Example
-print("Majority Element:", majorityElement([3,2,3]))   # Output: 3
-print("Majority Element:", majorityElement([2,2,1,1,1,2,2]))  # Output: 2
