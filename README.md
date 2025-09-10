@@ -3,7 +3,7 @@
 This repository is a **comprehensive collection of advanced algorithms, problem-solving techniques, and patterns** frequently used to solve **LeetCode problems** and **competitive programming challenges**.
 
 ⚠ **Note:**  
-This repository **excludes classical DSA topics** (arrays, linked lists, stacks, queues, basic sorting/searching, etc.) — those are covered in a separate DSA repository.
+This repository **excludes classical DSA topics** (arrays, linked lists, stacks, queues, basic sorting/searching, etc.) — those are covered in a separate DSA repository check here: [DSA](https://github.com/LegendTejas/DSA).
 
 ---
 
