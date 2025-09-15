@@ -44,26 +44,90 @@ The **Sweep Line** technique converts interval problems into **events**:
 
 ---
 
-## Pseudocode
+# Intervals & Sweep Line Pseudocode
 
-### Generic Sweep Line
+## Interval Merging (Greedy)
 
-```
-function sweepLine(intervals):
-events = []
-for (start, end) in intervals:
-events.append((start, +1))
-events.append((end, -1))
-sort(events)   # sort by position, handle ties carefully
+    function mergeIntervals(intervals):
+        if intervals is empty:
+            return []
 
-active = 0
-max_active = 0
-for (pos, change) in events:
-    active += change
-    max_active = max(max_active, active)
+        sort intervals by start
+        merged = [intervals[0]]
 
-return max_active
-```
+        for interval in intervals[1:]:
+            if interval.start <= merged[-1].end:
+                merged[-1].end = max(merged[-1].end, interval.end)
+            else:
+                append interval to merged
+
+        return merged
+
+---
+
+## Non-overlapping Intervals (Greedy Removal)
+
+    function eraseOverlap(intervals):
+        if intervals is empty:
+            return 0
+
+        sort intervals by end
+        count = 0
+        prev_end = intervals[0].end
+
+        for interval in intervals[1:]:
+            if interval.start < prev_end:
+                count = count + 1     # overlap → remove this interval
+            else:
+                prev_end = interval.end
+
+        return count
+
+---
+
+## Insert Interval
+
+    function insertInterval(intervals, newInterval):
+        result = []
+
+        for interval in intervals:
+            if newInterval.end < interval.start:
+                append newInterval to result
+                append all remaining intervals to result
+                return result
+
+            else if newInterval.start > interval.end:
+                append interval to result
+            else:
+                newInterval.start = min(newInterval.start, interval.start)
+                newInterval.end = max(newInterval.end, interval.end)
+
+        append newInterval to result
+        return result
+
+---
+
+## Generic Sweep Line
+
+    function sweepLine(intervals):
+        events = []
+        for (start, end) in intervals:
+            events.append((start, +1))
+            events.append((end, -1))
+
+        sort events by position
+            # if tie-breaking is needed:
+            #   ensure start events (+1) come before end events (-1)
+            #   or define tie rule based on the problem
+
+        active = 0
+        max_active = 0
+        for (pos, change) in events:
+            active += change
+            max_active = max(max_active, active)
+
+        return max_active
+
 
 ---
 
